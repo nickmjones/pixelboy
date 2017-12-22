@@ -70,10 +70,10 @@ body {
 
 .toolbar .btn {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   background: #0072ac;
   text-align: center;
-  padding: 3px 9px;
+  padding: 4px 9px;
   cursor: pointer;
   border-radius: 4px;
   float: right;
@@ -84,7 +84,7 @@ body {
   width: 600px;
   padding: 0;
   margin: auto;
-  border: 1px solid #d7d7d7
+  border: 1px solid #d7d7d7;
   border-right: 0;
   border-bottom: 0;
   overflow: hidden;
@@ -107,6 +107,15 @@ body {
 .canvas .node:hover {
   box-shadow: 0 0 1px salmon inset;
 }
-.canvas .node.filled {
-  background: #222;
+.canvas .node.filledBlack {
+  background: #000;
+}
+.canvas .node.filledGray {
+  background: #666;
+}
+.canvas .node.filledLightGray {
+  background: #999;
+}
+.canvas .node.filledLightestGray {
+  background: #d7d7d7;
 }
