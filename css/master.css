@@ -80,7 +80,13 @@ body {
   margin: 0;
 }
 
-.canvas {
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.grid {
   width: 600px;
   padding: 0;
   margin: auto;
@@ -89,9 +95,10 @@ body {
   border-bottom: 0;
   overflow: hidden;
   float: right;
+  position: relative;
 }
 
-.canvas .node {
+.grid .node {
   height: 24px;
   width: 24px;
   float: left;
@@ -104,18 +111,18 @@ body {
   -webkit-user-select: none;
   transition: all 0.10s ease-in-out;
 }
-.canvas .node:hover {
+.grid .node:hover {
   box-shadow: 0 0 1px salmon inset;
 }
-.canvas .node.filledBlack {
+.grid .node.filledBlack {
   background: #000;
 }
-.canvas .node.filledGray {
+.grid .node.filledGray {
   background: #666;
 }
-.canvas .node.filledLightGray {
+.grid .node.filledLightGray {
   background: #999;
 }
-.canvas .node.filledLightestGray {
+.grid .node.filledLightestGray {
   background: #d7d7d7;
 }

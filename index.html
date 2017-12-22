@@ -13,20 +13,10 @@
       <span class="btn" id="reset">Reset</span>
     </div>
     <div class="content">
-      <form class="palette">
-        <input type="radio" name="color" id="black" class="black" value="black" checked>
-        <label for="black">Black</label>
-
-        <input type="radio" name="color" id="gray" class="gray" value="gray">
-        <label for="gray">Gray</label>
-
-        <input type="radio" name="color" id="light-gray" class="light-gray" value="light-gray">
-        <label for="light-gray">Gray 3</label>
-
-        <input type="radio" name="color" id="lightest-gray" class="lightest-gray" value="lightest-gray">
-        <label for="lightest-gray">Gray 4</label>
-      </form>
-      <div class="canvas"></div>
+      <div class="grid">
+        <canvas id="canvas" width="597" height="597" style="border:1px solid #000000;">
+</canvas>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
