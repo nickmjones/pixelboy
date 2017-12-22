@@ -12,7 +12,7 @@ body {
 .content {
   height: 100vh;
   margin: 2rem auto;
-  width: 576px;
+  width: 630px;
 }
 
 .toolbar {
@@ -23,50 +23,27 @@ body {
 }
 
 .palette {
-  width: 60px;
+  width: 24px;
   float: left;
-  display: none;
-}
-.palette label {
-  font-size: 0.7rem;
-  display: inline-block;
+  padding: 0;
 }
 
-.palette .swatch {
-  display: block;
+input[type=radio] {
+  padding: 0.5em;
+  -webkit-appearance: none;
   width: 24px;
   height: 24px;
-  box-shadow: 0 1px 1px #efefef inset;
   position: relative;
-  cursor: pointer;
-  transition: all 0.20s ease-in-out;
+  margin: 0;
 }
-.palette .swatch input[type="radio"] {
-}
-.palette .swatch:before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  box-shadow: 0 0 1px 1px red inset;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-.palette .swatch:hover:before {
-  display: block;
-}
-.palette .swatch.black {
-  background: #000;
-}
-.palette .swatch.gray {
-  background: #666;
-}
-.palette .swatch.light-gray {
-  background: #999;
-}
-.palette .swatch.lightest-gray {
-  background: #d7d7d7;
+
+input[type=radio]#black { background: #000; }
+input[type=radio]#gray { background: #666; }
+input[type=radio]#light-gray { background: #999; }
+input[type=radio]#lightest-gray { background: #d7d7d7; }
+
+input[type=radio]:checked {
+  border: 1px solid rgb(236, 24, 183);
 }
 
 .toolbar .btn {
