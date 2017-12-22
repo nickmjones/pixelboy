@@ -1,12 +1,13 @@
 /* Master
 =============================*/
+@import url('https://fonts.googleapis.com/css?family=Bungee');
 
 body {
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  background: #efefef;
+  background: #f8f8f8;
 }
 
 .content {
@@ -20,6 +21,10 @@ body {
   height: 20px;
   padding: 1rem;
   background: #fff;
+}
+
+.title {
+  font-family: Bungee, Helvetica, sans-serif;
 }
 
 .palette {
@@ -43,13 +48,14 @@ input[type=radio]#light-gray { background: #999; }
 input[type=radio]#lightest-gray { background: #d7d7d7; }
 
 input[type=radio]:checked {
-  border: 1px solid rgb(236, 24, 183);
+  border: 1px solid red;
 }
 
 .toolbar .btn {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.7);
-  background: #0072ac;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(74, 198, 146);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   text-align: center;
   padding: 4px 9px;
   cursor: pointer;
@@ -96,4 +102,13 @@ input[type=radio]:checked {
 }
 .canvas .node.filledLightestGray {
   background: #d7d7d7;
+}
+
+footer {
+  height: 10vh;
+  background: #d7d7d7;
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 2rem;
+  color: #999;
 }
