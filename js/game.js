@@ -40,6 +40,7 @@ $(document).ready(function () {
   }
 
   $('#reset').click(function () {
+    $('overlay').toggleClass('isVisible')
     resetBoard()
   })
 })
