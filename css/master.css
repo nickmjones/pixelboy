@@ -13,7 +13,7 @@ body {
 .content {
   height: 100vh;
   margin: 2rem auto;
-  width: 630px;
+  width: 710px;
 }
 
 .toolbar {
@@ -28,9 +28,12 @@ body {
 }
 
 .palette {
-  width: 24px;
+  width: 96px;
   float: left;
   padding: 0;
+  border-top: 1px solid #d7d7d7;
+  border-left: 1px solid #d7d7d7;
+  overflow: hidden;
 }
 
 input[type=radio] {
@@ -39,13 +42,11 @@ input[type=radio] {
   width: 24px;
   height: 24px;
   position: relative;
+  float: left;
+  border-right: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   margin: 0;
 }
-
-input[type=radio]#black { background: #000; }
-input[type=radio]#gray { background: #666; }
-input[type=radio]#light-gray { background: #999; }
-input[type=radio]#lightest-gray { background: #d7d7d7; }
 
 input[type=radio]:checked {
   border: 1px solid red;
